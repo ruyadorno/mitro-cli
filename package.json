@@ -1,0 +1,46 @@
+{
+  "name": "mitro-cli",
+  "description": "Manage your Mitro passwords from command-line.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ruyadorno/mitro-cli",
+  "author": {
+    "name": "Ruy Adorno",
+    "url": "http://ruyadorno.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ruyadorno/mitro-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ruyadorno/mitro-cli/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ruyadorno/mitro-cli/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [
+    "mitro",
+    "password",
+    "manager",
+    "cli",
+    "command line"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "mitro": "./bin/mitro"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "mocha -R test"
+  },
+  "dependencies": {
+    "minimist": "~0.0.8",
+    "verbalize": "~0.1.1"
+  }
+}
+
