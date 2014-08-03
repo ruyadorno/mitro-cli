@@ -1,5 +1,8 @@
 var expect = require('expect.js');
 var mockLog = require('simple-output');
+var symbol = require('log-symbols');
+
+var messages = require('../../lib/messages').commands.listSecrets;
 
 var mockMitro = require('../mock-mitro');
 var listSecrets = require('../../lib/commands/list-secrets');
@@ -35,7 +38,8 @@ describe('commands/list-secrets', function () {
     listSecrets(mockMitro);
 
     expect(stdout).to.be.eql(
-      '\u001b[32m✔︎\u001b[39m  Listing secrets for user: example@example.com\n\n400001 - hello\n400002 - my secret\n\n'
+      symbol.success + '  ' + messages.success +
+      'example@example.com\n\n400001 - hello\n400002 - my secret\n\n'
     );
 
   });
