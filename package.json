@@ -1,6 +1,6 @@
 {
   "name": "mitro-cli",
-  "description": "Manage your Mitro passwords from command-line.",
+  "description": "Manage your Mitro passwords from a command line interface.",
   "version": "0.0.0",
   "homepage": "https://github.com/ruyadorno/mitro-cli",
   "author": {
@@ -24,6 +24,7 @@
     "mitro",
     "password",
     "manager",
+    "client",
     "cli",
     "command line"
   ],
@@ -33,12 +34,13 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=0.8"
+    "node": ">=0.10"
   },
   "scripts": {
     "test": "grunt"
   },
   "devDependencies": {
+    "expect.js": "~0.3.1",
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-mocha-test": "~0.11.0",
