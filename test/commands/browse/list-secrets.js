@@ -1,6 +1,6 @@
 var expect = require('expect.js');
 
-var listGroups = require('../../../lib/commands/browse/list-groups');
+var listSecrets = require('../../../lib/commands/browse/list-secrets');
 
 var mockMitro = require('../../mock-mitro');
 
@@ -8,7 +8,7 @@ var mockMitro = require('../../mock-mitro');
 // ---
 
 
-describe('commands/browse/list-groups', function () {
+describe('commands/browse/list-secrets', function () {
 
   it('should be able to exit interactive mode', function (done) {
 
@@ -20,9 +20,9 @@ describe('commands/browse/list-groups', function () {
       done();
     };
 
-    listGroups(mockMitro);
+    listSecrets(mockMitro);
 
-    var prompt = listGroups.prompt;
+    var prompt = listSecrets.prompt;
 
     prompt.rl.emit("keypress", "", { name : "up" });
     prompt.rl.emit("line");
@@ -35,16 +35,16 @@ describe('commands/browse/list-groups', function () {
 
   it('should be able to go back to browse command', function (done) {
 
-    listGroups(mockMitro);
+    listSecrets(mockMitro);
 
-    var _backCmd = listGroups.commands.back;
-    listGroups.commands.back = function () {
+    var _backCmd = listSecrets.commands.back;
+    listSecrets.commands.back = function () {
       expect(true).to.be.ok();
-      listGroups.commands.back = _backCmd;
+      listSecrets.commands.back = _backCmd;
       done();
     };
 
-    var prompt = listGroups.prompt;
+    var prompt = listSecrets.prompt;
 
     prompt.rl.emit("keypress", "", { name : "up" });
     prompt.rl.emit("keypress", "", { name : "up" });
