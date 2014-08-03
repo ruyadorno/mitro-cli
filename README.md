@@ -2,6 +2,9 @@
 
 version: 0.0.0
 
+[![Build Status](https://travis-ci.org/ruyadorno/mitro-cli.svg?branch=master)](https://travis-ci.org/ruyadorno/mitro-cli)
+
+
 [WIP]
 
 
