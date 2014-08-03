@@ -45,7 +45,7 @@ describe('commands/list-secrets', function () {
 
     expect(stdout).to.be.eql(
       symbol.success + '  ' + messages.success +
-      'example@example.com\n\n400001 - hello\n400002 - my secret\n\n'
+      'example@example.com\n\n400001 - hello\n400002 - my secret\n400003 - https://vimeo.com/\n\n'
     );
 
   });
