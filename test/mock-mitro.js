@@ -1,7 +1,13 @@
-var listGroupsAndSecretsSuccessFixture = 
+var listGroupsAndSecretsSuccessFixture =
   require('./fixtures/list-groups-and-secrets-success.json');
-var listGroupsAndSecretsErrorFixture = 
+var listGroupsAndSecretsErrorFixture =
   require('./fixtures/list-groups-and-secrets-error.json');
+var getSecretNoteSuccess =
+  require('./fixtures/get-secret-note-success.json');
+var getSecretPassSuccess =
+  require('./fixtures/get-secret-pass-success.json');
+var getSecretError =
+  require('./fixtures/get-secret-error.json');
 
 
 // ---
@@ -19,12 +25,25 @@ function ListGroupsAndSecrets(config, onSuccess, onError) {
   }
 }
 
+function GetSecret(config, onSuccess, onError) {
+  if (config.forceFail) {
+    onError(getSecretError);
+  } else {
+    if (config._[1] === "400001") {
+      onSuccess(getSecretNoteSuccess);
+    } else {
+      onSuccess(getSecretPassSuccess);
+    }
+  }
+}
+
 
 // ---
 
 
 module.exports = {
   runCommand: runCommand,
+  GetSecret: GetSecret,
   ListGroupsAndSecrets: ListGroupsAndSecrets
 };
 
