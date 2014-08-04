@@ -1,6 +1,6 @@
 # mitro-cli
 
-version: 0.1.0
+version: 0.1.1-rc
 
 [![Build Status](https://travis-ci.org/ruyadorno/mitro-cli.svg?branch=master)](https://travis-ci.org/ruyadorno/mitro-cli)
 
