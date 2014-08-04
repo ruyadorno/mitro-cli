@@ -1,7 +1,7 @@
 {
   "name": "mitro-cli",
   "description": "Manage your Mitro passwords from a command line interface.",
-  "version": "0.1.2-rc",
+  "version": "0.1.2",
   "homepage": "https://github.com/ruyadorno/mitro-cli",
   "author": {
     "name": "Ruy Adorno",
