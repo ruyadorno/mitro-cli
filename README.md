@@ -1,11 +1,8 @@
 # mitro-cli
 
-version: 0.1.0
+version: 0.1.1
 
 [![Build Status](https://travis-ci.org/ruyadorno/mitro-cli.svg?branch=master)](https://travis-ci.org/ruyadorno/mitro-cli)
-
-
-[WIP]
 
 
 ## About
@@ -39,7 +36,6 @@ In order to interact with **Mitro** servers you will need to provide your user i
 #### Example using username/password as command line arguments
 
 ```shell
-
 mitro list --uid example@example.com --password mypassword
 ```
 
