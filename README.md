@@ -10,7 +10,7 @@ version: 0.0.0
 
 ## About
 
-This is a better command line interface for using the [Mitro](http://www.mitro.co/) password manager.
+**Mitro CLI** is a better command line interface client for [Mitro](http://www.mitro.co/) password manager.
 
 
 ## Install
@@ -30,18 +30,22 @@ mitro
 
 ## Options
 
-In order to interact with **Mitro** cloud servers you will need to provider your user id and password everytime you execute a command.
+If no command is provided **Mitro CLI** will start in interactive mode, in this mode you are guided through some simple menus to access your stored data. This is the equivalent of running `mitro browse`.
 
-### Example user/pass as command line arguments
+### Authentication
+
+In order to interact with **Mitro** servers you will need to provide your user id and password. If those are not provided the interface will ask you for it anytime you try to execute a command.
+
+#### Example using username/password as command line arguments
 
 ```shell
 
 mitro list --uid example@example.com --password mypassword
 ```
 
-Alternatively, you can create a `.mitro-clirc` file inside your *$HOME* directory and declare all your options there using json format.
+#### Creating a ~/.mitro-clirc file
 
-### ~/.mitro-clirc example file
+Alternatively, you can create a `.mitro-clirc` file inside your *$HOME* directory and declare all your options there using json format.
 
 ```json
 {
@@ -49,16 +53,19 @@ Alternatively, you can create a `.mitro-clirc` file inside your *$HOME* director
 }
 ```
 
+*You could also add your password to the .mitro-clirc file but storing your master password as plain text is certainly not a great idea.*
+
 
 ## Usage
 
-Running only the **mitro** command from the terminal brings you into the interactive mode, where you can choose what to execute.
+Running only the **mitro** command from the terminal brings you into the interactive mode, where you will be guided through some simple menus to access your stored data.
 
 A set of commands is also available to interact with the **mitro** server:
 
-- `mitro list-secrets` List all your secrets
-- `mitro list-groups` List all your groups
-- `mitro list-all` List all your secrets and groups
+- `mitro list` List all your secrets and groups
+- `mitro listsecrets` List all your secrets
+- `mitro listgroups` List all your groups
+- `mitro show SECRET_ID` Shows the content of a secret, you can find *SECRET_ID* using one of the list commands above
 
 
 ## Why creating another cli for Mitro?
