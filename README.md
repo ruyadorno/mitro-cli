@@ -62,6 +62,7 @@ Running only the **mitro** command from the terminal brings you into the interac
 
 A set of commands is also available to interact with the **mitro** server:
 
+- `mitro browse` Starts the CLI interactive mode, using an interface to navigate through your Mitro data
 - `mitro list` List all your secrets and groups
 - `mitro listsecrets` List all your secrets
 - `mitro listgroups` List all your groups
