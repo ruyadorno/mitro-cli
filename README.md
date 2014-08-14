@@ -3,6 +3,7 @@
 version: 0.1.2
 
 [![Build Status](https://travis-ci.org/ruyadorno/mitro-cli.svg?branch=master)](https://travis-ci.org/ruyadorno/mitro-cli)
+[![Coverage Status](https://img.shields.io/coveralls/paulohp/mitro-cli.svg)](https://coveralls.io/r/paulohp/mitro-cli)
 
 
 ## About
@@ -75,4 +76,3 @@ What you find in this repository is the effort to have an user-friendly command 
 ## License
 
 Copyright (c) 2014 Ruy Adorno. Licensed under the MIT license.
-
