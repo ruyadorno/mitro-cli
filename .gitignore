@@ -52,3 +52,5 @@ tmp
 temp
 TODO.md
 
+coverage/
+npm-debug.log
