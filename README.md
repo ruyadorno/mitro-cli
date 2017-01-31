@@ -2,7 +2,7 @@
 
 version: 0.1.3
 
-[![Build Status](https://travis-ci.org/ruyadorno/mitro-cli.svg?branch=master)](https://travis-ci.org/ruyadorno/mitro-cli)
+[![Build Status](https://travis-ci.org/ruyadorno/mitro-cli.svg?branch=master)](https://travis-ci.org/ruyadorno/mitro-cli) ![Project frozen](https://img.shields.io/badge/status-frozen-blue.svg) ![Project unmaintained](https://img.shields.io/badge/project-unmaintained-red.svg)
 
 
 ## About
